@@ -403,21 +403,6 @@ header .navbar {
   margin: 10px 0 7px 0;
 }
 
-/* responsive media query start */
-/* 
-@media (max-width: 850px) {
-  .about-content .right .text {
-    font-size: var(--font-size-s);
-    font-weight: var(--font-weight-medium);
-  }
-
-  .about-content .right {
-    display: grid;
-    grid-gap: 20px;
-    padding: 0 15px;
-  }
-} */
-
 @media (max-width: 860px) {
 
   .about-content .left {
@@ -640,7 +625,7 @@ header .navbar {
   }
   
   .hero-section .hero-details .hire-me:hover {
-    background: blue;
+    background: none;
     padding: 7px 17px;
     color: var(--secondary-color);
     border: 3px solid var(--secondary-color);

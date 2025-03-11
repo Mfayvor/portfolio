@@ -1,15 +1,4 @@
 
-// function myFunction(x) {
-//   x.classList.toggle("active-two")
-//   var navbarLinks = document.getElementById("nav-menu");
-//   if (navbarLinks.style.display === "block") {
-//     navbarLinks.style.display = "none";
-//   }
-//   else{
-//     navbarLinks.style.display = "block";
-//   }
-// }
-
 $('.hamburger').click(function(x){
   $('#nav-menu').toggleClass("active");
   $('.hamburger-two').toggleClass("active")
