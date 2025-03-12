@@ -51,12 +51,12 @@ ul {
 a {
   text-decoration: none;
 }
-
+/* 
 .section-content {
   max-width: var(--site-max-width);
   padding: 0 80px;
   margin: auto;
-}
+} */
 
 button {
   cursor: pointer;
@@ -370,16 +370,19 @@ header .navbar {
   background: var(--dark-color);
   text-align: center;
   border-radius: var(--border-radius-s);
-  padding: 20px 25px;
+  padding: 0 25px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .services-section .serv-content .card:hover {
-  background: var(--white-color);
+  background: var(--secondary-color);
 }
 
 .services-section .serv-content .card .box {
+  display: grid;
+  align-content: center;
+  height: 300px;
   transition: all 0.3s ease;
 }
 
@@ -629,5 +632,24 @@ header .navbar {
     color: var(--secondary-color);
     border: 3px solid var(--secondary-color);
     border-radius: var(--border-radius-s);
+  }
+}
+
+@media (max-width: 3755px) {
+  .hero-section .hero-details .title {
+    margin-right: 90px;
+    color: var(--white-color);
+    font-size: var(--font-size-l);
+  }
+  .hero-section .hero-details .subtitle {
+    margin-right: 10px;
+    color: var(--white-color);
+    font-size: var(--font-size-s);
+  }
+  .hero-section .hero-details .description {
+    margin-right: 130px;
+    color: var(--white-color);
+    font-size: var(--font-size-n);
+    text-align: center;
   }
 }
