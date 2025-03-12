@@ -358,8 +358,8 @@ header .navbar {
 .services .serv-content {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px 100px 20px;
-  padding-bottom: 100px;
+  padding: 0 20px 0 20px;
+  padding-bottom: 30px;
   flex-wrap: wrap;
 }
 
@@ -407,6 +407,125 @@ header .navbar {
   font-weight: var(--font-weight-bold);
   margin: 10px 0 7px 0;
 }
+
+/* skill section styling */
+
+.skills {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.skills .skills-section {
+  margin: auto 30px auto 30px;
+}
+
+.skills-section .about-me {
+  position: relative;
+  text-align: center;
+}
+
+.skills-section .about-me::after {
+  content: "what i know";
+}
+
+.skills-section .skill-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills-section .skill-content .column {
+  width: calc(50% - 30px);
+}
+
+.skills-section .skill-content .left {
+  display: grid;
+  grid-gap: 15px;
+}
+
+.skills-section .skill-content .left .text {
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-bold);
+}
+
+.skills-section .skill-content .left p {
+  text-align: justify;
+}
+
+.skills-section .skill-content .left a {
+  width: 120px;
+  height: 45px;
+  padding: 15px;
+  color: var(--white-color);
+  background: var(--secondary-color);
+  border-radius: var(--border-radius-s);
+  box-shadow: var(--box-shadow);
+  transition: 0.3s ease;
+}
+
+.skills-section .skill-content .left a:hover {
+  width: 120px;
+  height: 45px;
+  padding: 12px;
+  background: none;
+  color: var(--secondary-color);
+  border: 3px solid var(--secondary-color);
+}
+
+.skills-section .skill-content .right .bars{
+  margin-bottom: 15px;
+}
+
+.skills-section .skill-content .right .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills-section .skill-content .right .bars span{
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-s);
+}
+
+.skills-section .skill-content .right .line {
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+
+.skills-section .skill-content .right .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  left: 0;
+  top: 0;
+  background: var(--secondary-color);
+}
+
+.skills-section .skill-content .right .html::before {
+  width: 90%;
+}
+
+.skills-section .skill-content .right .css::before {
+  width: 60%;
+}
+
+.skills-section .skill-content .right .js::before {
+  width: 30%;
+}
+
+.skills-section .skill-content .right .php::before {
+  width: 50%;
+}
+
+.skills-section .skill-content .right .mysql::before {
+  width: 30%;
+}
+
+
 
 @media (max-width: 860px) {
 
