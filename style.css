@@ -65,7 +65,7 @@ button {
 }
 
 img {
-  width: 100%;
+  /* width: 100%; */
 }
 
 /* navbar styling */
@@ -143,21 +143,24 @@ header .navbar {
   background-attachment: scroll;
   background-size: cover;
   height: 100vh;
+  overflow: hidden;
 }
 
 .hero .hero-section {
-  margin: auto 0 auto 50px;
+  margin: auto 0 auto 0;
+}
+
+.hero-section .hero-details {
+  display: grid;
+  margin-left: 50px;
 }
 
 .hero-section .hero-details .title {
-  margin-right: 40px;
   color: var(--white-color);
   font-size: var(--font-size-xxl);
-  text-align: center;
 }
 
 .hero-section .hero-details .subtitle {
-  margin-top: 8px;
   color: var(--white-color);
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-medium);
@@ -329,7 +332,7 @@ header .navbar {
 /* services styling */
 
 .services {
-  height: 100vh;
+  /* height: 100vh; */
   /* padding-top: 100px; */
   background: var(--primary-color);
 }
@@ -570,7 +573,6 @@ header .navbar {
   }
 
   .services {
-    height: 120vh;
     background: var(--primary-color);
   }
 
@@ -585,7 +587,6 @@ header .navbar {
   }
 
   .services {
-    height: 140vh;
     background: var(--primary-color);
   }
 
@@ -635,21 +636,31 @@ header .navbar {
   }
 }
 
-@media (max-width: 3755px) {
+@media (max-width: 400px) {
+  .hero-section .hero-details {
+    margin-left: 20px;
+  }
   .hero-section .hero-details .title {
-    margin-right: 90px;
-    color: var(--white-color);
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-xl);
   }
   .hero-section .hero-details .subtitle {
-    margin-right: 10px;
-    color: var(--white-color);
-    font-size: var(--font-size-s);
+    font-size: var(--font-size-l);
   }
   .hero-section .hero-details .description {
-    margin-right: 130px;
-    color: var(--white-color);
-    font-size: var(--font-size-n);
-    text-align: center;
+    font-size: var(--font-size-s);
   }
+
+  .about-content .left .about-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: var(--border-radius-s);
+    border-bottom-left-radius: var(--border-radius-s);
+  }
+
+  .about-content .left {
+    margin-bottom: 60px;
+  }
+
+
 }
