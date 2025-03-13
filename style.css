@@ -332,9 +332,8 @@ header .navbar {
 
 /* services styling */
 
-.services {
-  /* height: 100vh; */
-  /* padding-top: 100px; */
+.services,
+.team {
   background: var(--primary-color);
 }
 
@@ -525,6 +524,97 @@ header .navbar {
   width: 30%;
 }
 
+/* skill section styling  */
+
+.team {
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.team .team-section {
+  margin: auto 40px auto 40px;
+}
+
+.team .about-me {
+  color: var(--white-color);
+}
+.team .about-me::before {
+  background: var(--white-color);
+}
+.team .about-me::after {
+  content: "The Crew";
+  background: var(--primary-color);
+}
+
+.team .carousel .card {
+  padding: 25px 35px;
+  color: var(--white-color);
+  background: var(--dark-color);
+  border-radius: var(--border-radius-s);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.team .carousel .card:hover {
+  background: var(--secondary-color);
+}
+
+.team .carousel .card .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.team .carousel .card:hover .box {
+  transform: scale(1.05);
+}
+
+.team .carousel .card .text {
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-medium);
+  margin: 10px 0 7px 0;
+}
+
+.team .carousel .card img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-circle);
+  border: 5px solid var(--secondary-color);
+  transition: all 0.3s ease;
+}
+
+.team .carousel .card:hover img {
+  border-color: var(--white-color);
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: var(--border-radius-circle);
+  border: 2px solid var(--secondary-color) !important;
+  transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+  background: var(--secondary-color) !important;
+
+}
 
 
 @media (max-width: 860px) {
@@ -756,6 +846,9 @@ header .navbar {
 }
 
 @media (max-width: 400px) {
+  .navbar .nav-logo .logo-text {
+    left: 20px;
+  }
   .hero-section .hero-details {
     margin-left: 20px;
   }
