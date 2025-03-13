@@ -237,13 +237,18 @@ header .navbar {
 .about .about-content{
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 0 20px;
   flex-wrap: wrap;
 }
 
+.about .about-content .column {
+  width: calc(50% - 30px);
+}
+
 .about-content .left .about-image {
   width: 400px;
-  height: 400px;
+  height: 450px;
   object-fit: cover;
   border-top-left-radius: var(--border-radius-s);
   border-bottom-left-radius: var(--border-radius-s);
@@ -256,9 +261,6 @@ header .navbar {
   max-width: 500px;
   height: 400px;
   padding: 0 30px;
-  border-top-right-radius: var(--border-radius-s);
-  border-bottom-right-radius: var(--border-radius-s);
-  box-shadow: var(--box-shadow);
 }
 
 .about-content .right .text {
@@ -271,7 +273,7 @@ header .navbar {
   font-weight: var(--font-weight-bold);
 }
 
-.about-content .right .aboout-text {
+.about-content p {
   text-align: justify;
   font-size: var(--font-size-s);
 }
@@ -527,25 +529,19 @@ header .navbar {
 
 @media (max-width: 860px) {
 
+  .about-content .left .about-image {
+    width: 350px;
+    height: 400px;
+  }
+
   .about-content .left {
     display: flex;
     justify-content: center;
   }
 
-  .about-content .left .about-image {
-    width: 400px;
-    height: 400px;
-  }
-
-  .about-content .right {
-    display: grid;
-    grid-gap: 20px;
-    padding: 0 15px;
-  }
-
-  .about-content .right .about-text {
-    text-align: left;
-  }
+   .about .about-content .column {
+    width: 100%;
+   }
 
   
   .skills-section .skill-content .column {
@@ -775,14 +771,14 @@ header .navbar {
 
   .about-content .left .about-image {
     width: 200px;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
     border-top-left-radius: var(--border-radius-s);
     border-bottom-left-radius: var(--border-radius-s);
   }
 
   .about-content .left {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 
 
