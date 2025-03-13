@@ -186,7 +186,6 @@ header .navbar {
   background: var(--secondary-color);
   text-align: center;
   border-radius: var(--border-radius-s);
-  box-shadow: var(--box-shadow);
   transition: 0.3s ease;
 }
 
@@ -284,7 +283,6 @@ header .navbar {
   color: var(--white-color);
   background: var(--secondary-color);
   border-radius: var(--border-radius-s);
-  box-shadow: var(--box-shadow);
   transition: 0.3s ease;
 }
 
@@ -461,7 +459,6 @@ header .navbar {
   color: var(--white-color);
   background: var(--secondary-color);
   border-radius: var(--border-radius-s);
-  box-shadow: var(--box-shadow);
   transition: 0.3s ease;
 }
 
@@ -548,6 +545,12 @@ header .navbar {
 
   .about-content .right .about-text {
     text-align: left;
+  }
+
+  
+  .skills-section .skill-content .column {
+    width: 100%;
+    margin-bottom: 35px;
   }
 }
 
