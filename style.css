@@ -18,6 +18,7 @@
   --medium-gary-colour: #ccc;
 
   /* font size */
+  --font-size-xs: 0.7rem;
   --font-size-s: 0.9rem;
   --font-size-n: 1rem;
   --font-size-m: 1.12rem;
@@ -51,21 +52,11 @@ ul {
 a {
   text-decoration: none;
 }
-/* 
-.section-content {
-  max-width: var(--site-max-width);
-  padding: 0 80px;
-  margin: auto;
-} */
 
 button {
   cursor: pointer;
   border: none;
   background: none;
-}
-
-img {
-  /* width: 100%; */
 }
 
 /* navbar styling */
@@ -736,6 +727,28 @@ header .navbar {
   color: var(--secondary-color);
 }
 
+/* footer styling  */
+
+footer {
+  background: var(--dark-color);
+  padding: 20px 23px;
+  color: var(--white-color);
+  text-align: center;
+}
+
+footer span a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+footer span a:hover {
+  text-decoration: underline;
+}
+
+footer span .fa-copyright {
+  font-size: var(--font-size-xs);
+}
+
 @media (max-width: 860px) {
 
   .about-content .left .about-image {
@@ -984,5 +997,10 @@ header .navbar {
     margin-bottom: 30px;
   }
 
+  footer span,
+  footer span a,
+  footer span .fa-copyright{
+    font-size: var(--font-size-xs);
+  }
 
 }
