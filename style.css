@@ -470,7 +470,7 @@ header .navbar {
 
 .skills-section .skill-content .left p {
   text-align: justify;
-  font-size: var(--font-size-s)
+  font-size: var(--font-size-s);
 }
 
 .skills-section .skill-content .left a {
@@ -496,7 +496,7 @@ header .navbar {
   margin-bottom: 15px;
 }
 
-.skills-section .skill-content .right .info {
+.skills-section .skill-content .ight .info {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -662,6 +662,7 @@ header .navbar {
 
 .contact .contact-content .left p{
   text-align: justify;
+  font-size: var(--font-size-s);
 }
 
 .contact .contact-content .left .icons {
