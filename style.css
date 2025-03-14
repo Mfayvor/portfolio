@@ -8,6 +8,11 @@
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   /* text color */
   --white-color: #fff;
@@ -122,7 +127,31 @@ header .navbar {
   color: var(--white-color);
 }
 
+/* scroll up and down btn  */
+.scroll-up-btn {
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background: var(--secondary-color);
+  right: 30px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 45px;
+  color: var(--white-color);
+  z-index: 999999999;
+  font-size: var(--font-size-m);
+  border-radius: var(--border-radius-s);
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
 
+.scroll-up-btn.show {
+  bottom: 30px;
+  opacity: 1;
+  pointer-events: auto;
+}
 
 /* hero page styling */
 
@@ -157,8 +186,7 @@ header .navbar {
   font-weight: var(--font-weight-medium);
 }
 
-.hero-section .hero-details .subtitle::after {
-  content: 'Freelancer|';
+.hero-section .hero-details span .typing {
   color: var(--secondary-color);
 }
 
@@ -191,7 +219,7 @@ header .navbar {
 /* about scetion styling */
 
 .about {
-  margin-top: 100px;
+  padding-top: 100px;
   margin-bottom: 100px;
 }
 .about-section .about-me {
@@ -258,10 +286,9 @@ header .navbar {
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-bold);
 }
-.about-content .right .text::after {
-  content: "freelancer";
+
+.about-content .right .text .typing-2 {
   color: var(--secondary-color);
-  font-weight: var(--font-weight-bold);
 }
 
 .about-content p {
@@ -611,7 +638,7 @@ header .navbar {
 /* contact section starts */
 
 .contact {
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 .contact .contact-section {
@@ -1002,5 +1029,4 @@ footer span .fa-copyright {
   footer span .fa-copyright{
     font-size: var(--font-size-xs);
   }
-
 }
