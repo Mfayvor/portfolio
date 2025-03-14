@@ -964,11 +964,6 @@ footer span .fa-copyright {
     font-weight: var(--font-weight-medium);
   }
   
-  .hero-section .hero-details .subtitle::after {
-    content: 'Freelancer|';
-    color: var(--secondary-color);
-  }
-  
   .hero-section .hero-details .description {
     margin: 24px 0 20px;
     font-size: var(--font-size-m);
