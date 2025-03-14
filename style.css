@@ -657,12 +657,13 @@ header .navbar {
 .contact .contact-content .text {
   font-size: var(--font-size-l);
   font-weight: var(--font-weight-semibold);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .contact .contact-content .left p{
   text-align: justify;
   font-size: var(--font-size-s);
+  margin-bottom: 30px;
 }
 
 .contact .contact-content .left .icons {
@@ -685,11 +686,12 @@ header .navbar {
 }
 
 .contact .contact-content .info .head {
+  font-size: var(--font-size-n);
   font-weight: var(--font-weight-semibold);
-  padding: 10px 0;
 }
 
 .contact .contact-content .info  .sub-title {
+  font-size: var(--font-size-s);
   color: var(--dark-color);
 }
 
