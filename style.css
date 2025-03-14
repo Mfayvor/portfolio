@@ -470,6 +470,7 @@ header .navbar {
 
 .skills-section .skill-content .left p {
   text-align: justify;
+  font-size: var(--font-size-s)
 }
 
 .skills-section .skill-content .left a {
