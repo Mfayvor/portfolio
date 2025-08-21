@@ -24,6 +24,7 @@ html {
 
   /* font size */
   --font-size-xs: 0.7rem;
+  --font-size-ss: 0.8rem;
   --font-size-s: 0.7rem;
   --font-size-n: 1rem;
   --font-size-m: 1.12rem;
@@ -75,6 +76,7 @@ button {
 
 .header.sticky {
   padding: 10px 0;
+  overflow: hidden;
   background: var(--secondary-color);
 }
 
@@ -1021,6 +1023,10 @@ footer span .fa-copyright {
 
   .about-content .left {
     margin-bottom: 30px;
+  }
+
+  .about-content .right .text {
+    font-size: var(--font-size-ss);
   }
 
   footer span,
